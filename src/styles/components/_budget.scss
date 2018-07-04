@@ -21,7 +21,8 @@
     @include button-defaults;
     @include submit-button;
     width: 100%;
-    &:active {
+    &:focus {
         @include button-click;
+        background-color: darken($green, 5%);
     }
 }

@@ -1,4 +1,4 @@
-/////// ******************************* For Both Edit Expense Page/Add Expense/ Expense Form ****************************//////////////
+/////// ******************************* For Both Edit Expense Page/Add Expense/Expense Form ****************************//////////////
 
 .add-expense__title, .edit-expense__title {
     @include form-title-styles;
@@ -43,29 +43,61 @@
     }
 }
 
-
 .expense-form__btn {
     @include submit-button;
-    width: 92.5%;
+    width: 100%;
 }
 
 .expense-form__btn:focus {
-    background-color: lighten($green, 10%);
     @include button-click;
+    background-color: darken($green, 10%);
     outline: none;
 }
 
 .expense-error {
     color: $secondary;
     animation: error-fade 3s ease-out forwards;
-    margin: auto;
-    width: 100%;
+    margin: 2rem 0 0 auto;
+    width: 92.5%;
 }
 
 @keyframes error-fade {
     0% {opacity: 1;}
     100% {opacity: 0;}
 }
+
+//Date Picker Styles 
+.expense-form__separator__date {
+    border-bottom: .8px solid lighten($secondary, 10%);
+    width: 92%;
+    margin-left: .5rem;
+}
+
+.SingleDatePickerInput {
+    background: transparent !important;  
+    border: none !important;
+    width: 100% !important;
+}
+
+.DateInput {
+    background: transparent !important;  
+}
+
+.DateInput__input {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.DateInput__display-text {
+    color: lighten($primary, 30%) !important;
+    font-family: $main-font !important;
+    font-weight: 600 !important;
+    margin: 0 0 -.5rem -.5rem !important;
+}
+
+
+
 
 
 //////////// Edit Expense

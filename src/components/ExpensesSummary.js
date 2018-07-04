@@ -14,7 +14,7 @@ export const ExpenseSummary = (props) => {
         <div className="expense-summary__container">
             
                 <h3 className="expense-summary is-total">Viewing <span className="expense-summary__number">{props.expenseCount}</span> {expenseWord}</h3> 
-                <h3 className="expense-summary"> Total Expenses: <span className="expense-summary__number">{expenseSummaryFormatted}</span></h3>
+                <h3 className="expense-summary"> Amount Spent: <span className="expense-summary__number">{expenseSummaryFormatted}</span></h3>
             
                 <h3 className="expense-summary"> Budget Overall: <span className="expense-summary__number">{budgetAmount}</span></h3>
                 <h3 className="expense-summary"> Budget Remaining:

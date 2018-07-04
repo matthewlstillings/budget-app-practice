@@ -96,14 +96,16 @@ export default class ExpenseForm extends React.Component {
 
                     <div className="expense-form__separator">
                         <label htmlFor="date" className="expense-for__input-label"><FontAwesomeIcon icon={faCalendar}/></label>
-                        <SingleDatePicker 
-                            date={this.state.createdAt}
-                            onDateChange={this.onDateChange}
-                            focused={this.state.focused}
-                            onFocusChange={this.onFocusChange}
-                            numberOfMonths={1}
-                            isOutsideRange={()=> false}
-                    />
+                        <div className="expense-form__separator__date">
+                            <SingleDatePicker 
+                                date={this.state.createdAt}
+                                onDateChange={this.onDateChange}
+                                focused={this.state.focused}
+                                onFocusChange={this.onFocusChange}
+                                numberOfMonths={1}
+                                isOutsideRange={()=> false}
+                            />
+                        </div>
                     </div>
 
                     <div className="expense-form__separator">
