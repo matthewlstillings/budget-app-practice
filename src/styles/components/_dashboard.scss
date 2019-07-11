@@ -1,0 +1,102 @@
+.budget-dashboard__filters {
+    width: 100%;
+}
+
+.budget-dashboard__text-filter {
+    border: none;
+    box-shadow: none;
+    background: $light-primary;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    outline: none;
+    padding-left: 1rem;
+    width: 100%;
+    &::placeholder {
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+.budget-dashboard__sort__container {
+    background: $secondary;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    max-width: 165px;
+    padding-left: 1rem;
+    width: 45%;
+}
+
+.budget-dashboard__sort {
+    background: transparent;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    box-shadow: none;
+    margin:0;
+    outline: none;
+    margin-left: .5rem;
+}
+
+.sort-drop {
+    white-space: nowrap;
+    border: none;
+    box-shadow: none;
+    color: black;
+    outline: none;
+    
+}
+
+.filters__container {
+    display: flex;
+    flex-direction: row;
+}
+
+///////////////////////Date Range Picker
+.DateRangePicker {
+    border: none;
+    width: 100%;
+    & > * {
+        width:100%;
+    }
+}
+
+.DateRangePickerInput {
+    align-items: center;
+    border: none !important;
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.DateInput {
+    font-size: 1.5rem !important;
+    text-align: center;
+    width: 10rem !important;
+}
+
+.DateInput__display-text {
+    padding: 0 !important;
+}
+
+///////////////////// Responsive //////////////////////////////////////
+
+@media (min-width: $desktop-breakpoint) {
+    .budget-dashboard__filters {
+        display: flex;
+    }
+    .filters__container {
+        flex-basis: 50%;
+    }
+    .DateRangePicker {
+        flex-basis: 50%;
+    }
+     .DateRangePicker {
+        padding: 4.4px 0;
+        background: white;
+    }
+}
+

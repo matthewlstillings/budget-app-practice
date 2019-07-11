@@ -1,0 +1,66 @@
+.log-in {
+    align-items: center;
+    background: $primary;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.log-in__container {
+    background: lighten($light-primary, 5%);
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 16px 71px -5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 16px 71px -5px rgba(0,0,0,0.8);
+    box-shadow: 0px 16px 71px -5px rgba(0,0,0,0.8);
+    height: 40vh;
+    max-width: 28.125rem;
+    width: 80%;
+    
+}
+
+.log-in__text__container {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+}
+
+.log-in__text.is--title {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.log-in__text.is--subtitle {
+    font-weight: 200;
+    margin-top: .5rem;
+}
+
+.log-in__btn {
+    background: $secondary;
+    border: none;
+    border-radius: 0 0 9px 9px;
+    box-shadow: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    height: 15%;
+    margin-top:.3rem;
+    outline: none;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.log-in__btn:focus {
+    @include button-click;
+    background: lighten($secondary, 5%);
+
+}
