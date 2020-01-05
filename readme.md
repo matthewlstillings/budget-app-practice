@@ -1,14 +1,14 @@
-#Empty Wallet
+# Empty Wallet
 
 A web-based budget application. 
 
 See live version here: https://empty-wallet.herokuapp.com/dashboard
 
-#Motivation
+# Motivation
 
 Being an avid budgeter myself, and while there is a huge abundance of budget applications out there. This felt like a good project I could use to continue building my front end expertise as well as develope some database knowledge using Google’s Firebase.
 
-#Tech used
+# Tech used
 
 Built with: 
  - React (Create-react-app)
