@@ -11,7 +11,7 @@ Being an avid budgeter myself, and while there is a huge abundance of budget app
 # Tech used
 
 Built with: 
- - React (Create-react-app)
+ - React (v16.8.6)
  - Redux (v3.7.2)
  - Jest (v24.8.0)
  - Enzyme (v3.0.0)
